@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-custom text-white bg-gray-900">
+    <!-- Main container -->
+    <div class="container p-5 py-10 rounded-3xl bg-gray-800 md:w-[50rem] md:h-[90vh] mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-6">
+        
+        <!-- first blue box -->
+        <div class="box bg-blue-500 rounded-2xl md:row-span-2 pb-4 shadow-2xl">
+            <div class="w-full h-[70%] flex flex-col items-center justify-center mb-4">
+                <img class="w-[100px] rawalpindi-img" src="" alt="img">
+                <h1 class="text-[52px] font-bold rawalpindi-temp">00</h1>
+                <p class="text-[20px]">Rawalpindi</p>
+            </div>
+            <div class="w-full h-[30%] flex items-center justify-between text-sm px-3">
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[13px] font-bold text-gray-100">Wind Now</p>
+                    <div>
+                        <span class="font-bold text-[27px] rawalpindi-wind">00</span>
+                        <span class="text-[15px] text-gray-100">km</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[13px] font-bold text-gray-100">Humidity</p>
+                    <div>
+                        <span class="font-bold text-[27px] rawalpindi-humidity">00</span>
+                        <span class="text-[15px] text-gray-100">%</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[13px] font-bold text-gray-100">Wind Degree</p>
+                    <div>
+                        <span class="font-bold text-[27px] rawalpindi-wind_degree">00</span>
+                        <span class="text-[15px] text-gray-100">%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second blue box -->
+        <div class="box bg-purple-500 rounded-2xl shadow-2xl flex items-center justify-between px-5 text-[30px]">
+            <img class="w-16 opacity-20" src="src/arrow.png" alt="">
+            <h1 class="text-gray-100">My City's <br>Weather</h1>
+        </div>
+
+        <!-- first black box -->
+        <div class="box bg-gray-700 rounded-2xl shadow-2xl flex items-center justify-between px-5 text-[25px]">
+            <h1>Check Your's <br><input class="w-36 rounded-md px-2 bg-gray-600 text-gray-100 search" placeholder="Enter here" type="text"></h1>
+            <button><img class="w-16 opacity-40 rotate-180" src="src/arrow.png" alt=""></button>
+        </div>
+
+        <!-- second black box -->
+        <div class="box bg-gray-700 rounded-2xl md:row-span-2 pb-4 shadow-2xl">
+            <div class="w-full h-[70%] flex flex-col items-center justify-center mb-4">
+                <img class="w-[100px] img" src="" alt="img">
+                <h1 class="text-[52px] font-bold temp">00°</h1>
+                <p class="text-[20px] city-name">Loading</p>
+            </div>
+            <div class="w-full h-[30%] flex items-center justify-between text-sm px-3">
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[13px] font-bold text-gray-100">Wind Now</p>
+                    <div>
+                        <span class="font-bold text-[27px] wind">00</span>
+                        <span class="text-[15px] text-gray-100">km</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[13px] font-bold text-gray-100">Humidity</p>
+                    <div>
+                        <span class="font-bold text-[27px] humidity">00</span>
+                        <span class="text-[15px] text-gray-100">%</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[13px] font-bold text-gray-100">Wind Degree</p>
+                    <div>
+                        <span class="font-bold text-[27px] wind_degree">00</span>
+                        <span class="text-[15px] text-gray-100">%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
